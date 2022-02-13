@@ -1,0 +1,47 @@
+// Base color
+$blue-color: #0097FF;
+$green-color: #9CC330;
+$gray-color: #A8A8A8;
+$gray-light-color: #DDDDDD;
+$black-color: #000C0C;
+$white-color: #FFFFFF;
+
+@import "../Fonts/GothamPro/stylesheet.css";
+
+body {
+  font-family: Gotham Pro, sans-serif;
+  font-size: 17px;
+  line-height: 120%;
+  color: $black-color;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1655px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 17px 19px;
+  border-radius: 10px;
+  background-color: $blue-color;
+  font-size: 15px;
+  line-height: 14px;
+  letter-spacing: 0.07em;
+  color: $white-color;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $gray-color;
+  }
+}
+
+@import "Header";
+@import "Catalog/Catalog";
+@import "Catalog/Section";
+@import "Catalog/Sidebar";
+@import "Catalog/ActiveFilters";
+@import "Catalog/CartBox";
+@import "Footer";

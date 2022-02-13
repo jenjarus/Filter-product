@@ -1,0 +1,38 @@
+footer {
+  margin-top: 150px;
+  border-top: 50px solid $green-color;
+
+  .footer__menu {
+    display: flex;
+    padding: 55px 0;
+    margin: 0 -7px;
+
+    .menu__col {
+      margin: 0 37px;
+
+      .menu__title {
+        margin-bottom: 13px;
+        font-weight: 900;
+        font-size: 23px;
+        line-height: 25px;
+      }
+
+      .menu__item {
+        margin: 12px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: #5C5C5C;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

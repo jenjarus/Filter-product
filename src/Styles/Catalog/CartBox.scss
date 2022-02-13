@@ -1,0 +1,112 @@
+.cart__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px -16px;
+
+  .cart {
+    width: 362px;
+    background: $white-color;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin: 16px 16px;
+    padding: 0 12px;
+
+    .cart__elem {
+      color: $black-color;
+    }
+
+    .cart__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 12px 0;
+
+      .cart__articul {
+        color: $gray-color;
+      }
+
+      .cart__favorite {
+        cursor: pointer;
+
+        &:hover svg path {
+          stroke: $blue-color;
+        }
+      }
+    }
+
+    .cart__img {
+      height: 192px;
+      line-height: 192px;
+      text-align: center;
+      margin: 12px 0;
+
+      img {
+        display: inline-block;
+        max-height: 192px;
+        vertical-align: middle;
+      }
+    }
+
+    .cart__name {
+      height: 42px;
+
+      a {
+        display: inline-block;
+        height: 42px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $black-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $blue-color;
+        }
+      }
+    }
+
+    .cart__price {
+      display: flex;
+      margin: 12px 0;
+
+      .price {
+        font-weight: 900;
+        font-size: 23px;
+        line-height: 25px;
+        color: $blue-color;
+
+        &:after {
+          content: url("../../Images/r.svg");
+          margin-left: 7px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .cart__bottom {
+      .cart__line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 12px 0;
+      }
+
+      .cart__available {
+        font-size: 13px;
+        line-height: 130%;
+        color: $gray-color;
+      }
+
+      .btn__cart {
+        border: 0;
+        text-transform: uppercase;
+      }
+
+      .cart__min-lot {
+        font-size: 13px;
+        line-height: 130%;
+        color: $gray-color;
+      }
+    }
+  }
+}
